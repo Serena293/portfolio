@@ -1,0 +1,13 @@
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  border: dashed 2px #02744f;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+}
