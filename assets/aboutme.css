@@ -1,0 +1,9 @@
+.main-section{
+    display: flex;
+    padding: 1rem;
+}
+
+.main-section>div {
+    width: 60%;
+    margin-left: 2rem
+}

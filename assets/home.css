@@ -23,14 +23,14 @@
   margin-right: 2rem;
 }
 
-/* #text-main-section > h1 {
-    font-size: 40px;  
+#text-main-section > h2 {
+    font-size: 30px;  
     background: linear-gradient(270deg, rgb(233, 233, 234) 0%, rgba(2,116,79,1) 100%, rgba(0,212,255,1) 100%);  
     background-clip: text;          
     -webkit-background-clip: text;      
     -webkit-text-fill-color: transparent;
     color: transparent;                   
-  } */
+  } 
 
 #text-main-section > p {
   margin-top: 1rem;

@@ -2,16 +2,17 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-
   background-color: #181818;
   color: hsl(0, 0%, 83%);
   font-family: "Source Code Pro", monospace;
 }
+
 main {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
+
 a {
   text-decoration: none;
   color: #02744f;
@@ -25,6 +26,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+  font-size: 20px;
 }
 
 #links-nav > a {
@@ -42,14 +44,14 @@ footer > a {
   margin-bottom: 0.5rem;
 }
 
-h1{
-    font-size: 40px;  
-    background: linear-gradient(270deg, rgb(233, 233, 234) 0%, rgba(2,116,79,1) 100%, rgba(0,212,255,1) 100%);  
-    background-clip: text;          
-    -webkit-background-clip: text;      
-    -webkit-text-fill-color: transparent;
-    color: transparent;                   
-  }
+h1 {
+  font-size: 40px;
+  background: linear-gradient(270deg, rgb(233, 233, 234) 0%, rgba(2,116,79,1) 100%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 
 @media (max-width: 768px) {
   nav {
@@ -69,13 +71,47 @@ h1{
   }
 
   #main-section {
-    flex-direction: column-reverse;  
-    align-items: center;             
-    padding: 1rem;                 
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;
   }
 
   .div-profile-img {
-    margin-bottom: 1rem;             
+    margin-bottom: 1rem;
   }
 }
+
+
+
+.plane {
+  position: absolute;
+  top: 10%;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  color: rgba(2,116,79,1);
+  animation: fly 15s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0vw, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(20vw, -30px) rotate(8deg);
+  }
+  40% {
+    transform: translate(40vw, 10px) rotate(-6deg);
+  }
+  60% {
+    transform: translate(60vw, -20px) rotate(6deg);
+  }
+  80% {
+    transform: translate(80vw, 15px) rotate(-4deg);
+  }
+  100% {
+    transform: translate(100vw, 0px) rotate(-15deg);
+  }
+}
+
 
