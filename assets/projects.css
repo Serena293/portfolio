@@ -27,8 +27,13 @@ main{
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
   .project-img {
@@ -89,15 +94,10 @@ main{
       opacity: 1;
     }
     100% {
-      transform: translateY(30px) scaleX(-1); /* SCENDE PIÙ IN BASSO */
+      transform: translateY(30px) scaleX(-1); 
       opacity: 1;
     }
-  }
-  
-  
-  
-  
-  
+  } 
   
   /* Media Query for Smaller Screens */
   @media (max-width: 768px) {
