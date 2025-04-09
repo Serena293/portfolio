@@ -3,17 +3,15 @@
     "builds": [
       {
         "src": "home.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "*.html",
-        "use": "@vercel/static"
+        "use": "@vercel/static",
+        "config": { "include": ["**/*"] }
       }
     ],
     "routes": [
       {
-        "src": "/",
-        "dest": "/home.html"
+        "src": "/(.*)",
+        "dest": "/home.html",
+        "status": 200
       }
     ]
   }
