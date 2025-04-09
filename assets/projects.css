@@ -51,6 +51,54 @@ main{
     color: #025f41;
   }
   
+
+  .arrow-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20px; 
+    margin: 2rem;
+  }
+  
+  .arrow-text {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .arrow-small .icon {
+    width: 30px;
+    height: 30px;
+    color: #025f41;
+  }
+  
+  .arrow-down {
+    position: absolute;
+    top: 0;
+    animation: drop-down 2.0s ease-in-out forwards;
+    z-index: 2;
+  }
+  
+  @keyframes drop-down {
+    0% {
+      transform: translateY(-40px) scaleX(1);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(30px) scaleX(-1); /* SCENDE PIÙ IN BASSO */
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  
   /* Media Query for Smaller Screens */
   @media (max-width: 768px) {
     .projects-container {
