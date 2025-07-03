@@ -102,4 +102,10 @@ main {
   .project-img {
       height: 150px;
   }
+
+  #links-nav{
+    display: flex;
+    flex-direction: column;
+
+  }
 }
