@@ -3,19 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/img/profile.png" type="image/svg+xml">
+    <link rel="icon" href="./assets/img/profile.png" type="image/svg+xml" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/home.css" />
     <link rel="stylesheet" href="./assets/general.css" />
@@ -36,13 +34,16 @@
     </header>
     <main>
       <section id="main-section">
-        <div class="plane">
+        <div class="plane" id="plane-div">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
+            id="plane-svg"
+            tabindex="0"
+            aria-label="plane"
           >
             <path
               stroke-linecap="round"
@@ -66,5 +67,6 @@
       <p>&copy; <span id="year"></span> - Serena Ferraro</p>
     </footer>
     <script src="scripts/year.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
