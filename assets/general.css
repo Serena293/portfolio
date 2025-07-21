@@ -57,7 +57,19 @@ h1 {
   color: transparent;
 }
 
+#toggle-btn{
+  display: none;
+}
+
 @media (max-width: 768px) {
+  #toggle-btn{
+    display: block;
+    background-color: transparent;
+    font-size:  1.5rem;
+    color: #025f41;
+    border: none;
+  }
+
   nav {
     flex-direction: column;
     align-items: center;
@@ -65,14 +77,26 @@ h1 {
   }
 
   #links-nav {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem; */
   }
 
   #home-link {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
   }
+
+  #links-nav.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
   #main-section {
     flex-direction: column-reverse;
