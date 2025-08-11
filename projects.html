@@ -1,192 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/img/programming.png" type="image/svg+xml" />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/programming.png" type="image/svg+xml">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/general.css" />
-    <link rel="stylesheet" href="./assets/projects.css" />
-    <title>Projects</title>
-  </head>
-  <body>
-    <header id="header">
-      <nav>
-        <div id="home-link">
-          <a href="index.html">Home</a>
-            <button id="toggle-btn">&#9776;</button>
-        </div>
-        <div id="links-nav">
-          <a href="projects.html">Projects</a>
-          <a href="aboutme.html">About me</a>
-          <a href="contacts.html">Contacts</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <h1>My projects</h1>
-      <div class="projects-container">
-        <div id="rock-paper-scissor" class="project-card">
-          <div class="img-container">
-            <div class="img-inner">
-              <div class="img-front">
-                <img
-                  src="../assets/img/rock-paper-scissors.png"
-                  alt="rock-paper-scissor"
-                  class="project-img"
-                />
-              </div>
-              <div class="img-back">
-                <p class="project-description">
-                  Rock-Paper-Scissors game with animations and clean UI.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a
-            href="https://rock-paper-scissors-game-green.vercel.app/"
-            class="project-link"
-            >Rock Paper Scissor</a
-          >
-        </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/general.css">
+  <link rel="stylesheet" href="./assets/projects.css">
+  <title>Projects</title>
+</head>
 
-        <div id="snake" class="project-card">
-          <div class="img-container">
-            <div class="img-inner">
-              <div class="img-front">
-                <img
-                  src="../assets/img/snake.png"
-                  alt="snake-game"
-                  class="project-img"
-                />
-              </div>
-              <div class="img-back">
-                <p class="project-description">
-                  Classic Snake game using vanilla JavaScript.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="https://snake-ten-rouge.vercel.app/" class="project-link"
-            >Snake</a
-          >
-        </div>
-
-        <div id="tombola" class="project-card">
-          <div class="img-container">
-            <div class="img-inner">
-              <div class="img-front">
-                <img
-                  src="../assets/img/tombola.png"
-                  alt="tombola"
-                  class="project-img"
-                />
-              </div>
-              <div class="img-back">
-                <p class="project-description">
-                  A digital version of the traditional Italian Tombola game.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a
-            href="https://tombola-iota.vercel.app/firstPage.html"
-            class="project-link"
-            >Tombola</a
-          >
-        </div>
-
-        <div id="PlanApp" class="project-card">
-          <div class="img-container">
-            <div class="img-inner">
-              <div class="img-front">
-                <img
-                  src="../assets/img/PlanApp.png"
-                  alt="PlanApp"
-                  class="project-img"
-                />
-              </div>
-              <div class="img-back">
-                <p class="project-description">
-                  Full-stack web app for managing daily tasks through a
-                  dynamically generated calendar. Includes user registration and
-                  login with JWT authentication. Built with Java, Spring Boot,
-                  React, and PostgreSQL.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a
-            href="https://fullstack-project-fe.onrender.com"
-            class="project-link"
-            >PlanApp</a
-          >
-        </div>
-
-        <div id="weather-app" class="project-card">
-          <div class="img-container">
-            <div class="img-inner">
-              <div class="img-front">
-                <img
-                  src="../assets/img/weather-app.png"
-                  alt="weather-app"
-                  class="project-img"
-                />
-              </div>
-              <div class="img-back">
-                <p class="project-description">
-                  Weather forecast app using public APIs and location services.
-                  Built in React Vite with TypeScript.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a
-            href="https://weather-app-two-omega-52.vercel.app/"
-            class="project-link"
-            >WeatherApp</a
-          >
-        </div>
+<body>
+  <header id="header">
+    <nav>
+      <div id="home-link">
+        <a href="index.html">Home</a>
+        <button id="toggle-btn">&#9776;</button>
       </div>
-
-      <div class="arrow-wrapper">
-        <div class="arrow arrow-small arrow-down">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m15 15-6 6m0 0-6-6m6 6V9a6 6 0 0 1 12 0v3"
-            />
-          </svg>
-        </div>
-        <p class="arrow-text">Check the code on GitHub</p>
+      <div id="links-nav">
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contacts.html">Contacts</a>
       </div>
-    </main>
+    </nav>
+  </header>
 
-    <footer>
-      <a href="https://github.com/Serena293"><i class="fab fa-github"></i></a>
-      <p>&copy; <span id="year"></span> - Serena Ferraro</p>
-    </footer>
-   <script src="scripts/general.js"></script>
-    <script src="scripts/year.js"></script>
-  </body>
+  <main>
+    <h1>My Projects</h1>
+
+    <section class="projects-container">
+      <article class="project">
+        <figure>
+          <img src="./assets/img/snake.png" alt="Screenshot of the Snake Game">
+          <figcaption><a href="https://snake-ten-rouge.vercel.app/" target="_blank" rel="noopener noreferrer">Snake</a></figcaption>
+        </figure>
+        <div class="project-description">
+          <h2>Snake Game</h2>
+          <h3>Technologies: <span>HTML5</span>, <span>CSS</span>, <span>JavaScript</span></h3>
+          <p>Classic Snake game. Use the arrow keys to move the snake and eat the food. Avoid hitting yourself or the walls.</p>
+          <p>Best score is saved in <code>localStorage</code>.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-description">
+          <h2>Bingo Game</h2>
+          <h3>Technologies: <span>HTML5</span>, <span>CSS</span>, <span>JavaScript</span></h3>
+          <p>Bingo game that allows choosing the number of players and the number of cards for each player. Includes sound effects.</p>
+          <p>Game settings are saved in <code>localStorage</code>.</p>
+        </div>
+        <figure>
+          <img src="./assets/img/tombola.png" alt="Screenshot of the Bingo Game">
+          <figcaption><a href="https://tombola-iota.vercel.app/index.html" target="_blank" rel="noopener noreferrer">Bingo</a></figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <figure>
+          <img src="./assets/img/weather-app.png" alt="Screenshot of the Weather App">
+          <figcaption>
+            <a href="https://weather-app-two-omega-52.vercel.app/" target="_blank" rel="noopener noreferrer">Weather Application</a>
+          </figcaption>
+        </figure>
+        <div class="project-description">
+          <h2>Weather App</h2>
+          <h3>Technologies: <span>HTML5</span>, <span>CSS</span>, <span>TypeScript</span>, <span>Bootstrap</span>, <span>React</span>, <span>PWA</span></h3>
+          <p>A responsive weather application that integrates with two APIs:</p>
+          <ul>
+            <li>OpenWeather for real-time weather data</li>
+            <li>RapidAPI for location search functionality</li>
+          </ul>
+          <p>Key features:</p>
+          <ul>
+            <li>Automatic geolocation detection</li>
+            <li>Favorite cities saved in <code>localStorage</code></li>
+            <li>Progressive Web App (PWA) support</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-description">
+          <h2>Plan App</h2>
+          <h3>Technologies: <span>HTML5</span>, <span>CSS</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>React</span>, <span>PWA</span>, <span>Java</span>, <span>Spring Boot</span>, <span>SASS</span>, <span>PostgreSQL</span></h3>
+          <p>A full-stack planning application with the following features:</p>
+          <ul>
+            <li>JWT authentication</li>
+            <li>Dynamic calendar</li>
+            <li>Password reset via email</li>
+            <li>Save tasks in a PostgreSQL database</li>
+            <li>Location search functionality using RapidAPI</li>
+            <li>Progressive Web App (PWA) support</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="./assets/img/PlanApp.png" alt="Screenshot of the Plan Application">
+          <figcaption>
+            <a href="https://fullstack-project-fe.onrender.com" target="_blank" rel="noopener noreferrer">Plan App</a>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <figure>
+          <img src="./assets/img/rock-paper-scissors.png" alt="Screenshot of the Rock Paper Scissors Game">
+          <figcaption>
+            <a href="https://rock-paper-scissors-game-green.vercel.app/" target="_blank" rel="noopener noreferrer">Rock Paper Scissors</a>
+          </figcaption>
+        </figure>
+        <div class="project-description">
+          <h2>Rock Paper Scissors</h2>
+          <h3>Technologies: <span>HTML5</span>, <span>CSS</span>, <span>JavaScript</span></h3>
+          <p>Classic Rock Paper Scissors game with a score saved in <code>localStorage</code>. Includes a reset button.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-description">
+          <h2>Calculator</h2>
+          <h3>Technologies: <span>HTML5</span>, <span>CSS</span>, <span>JavaScript</span></h3>
+          <p>Basic calculator built as a <strong>team project</strong>. Supports addition, subtraction, multiplication, and division.</p>
+          <p>Designed with a clean interface for ease of use and responsive layout for mobile devices.</p>
+        </div>
+        <figure>
+          <img src="./assets/img/calculator.png" alt="Screenshot of the Calculator">
+          <figcaption>
+            <a href="https://serena293.github.io/calculator/" target="_blank" rel="noopener noreferrer">Calculator</a>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <div class="arrow-wrapper">
+      <div class="arrow arrow-small arrow-down">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m15 15-6 6m0 0-6-6m6 6V9a6 6 0 0 1 12 0v3" />
+        </svg>
+      </div>
+      <p class="arrow-text">Check the code on GitHub</p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://github.com/Serena293"><i class="fab fa-github"></i></a>
+    <p>&copy; <span id="year"></span> - Serena Ferraro</p>
+  </footer>
+
+  <script src="scripts/general.js"></script>
+  <script src="scripts/year.js"></script>
+</body>
+
 </html>

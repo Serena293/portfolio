@@ -8,52 +8,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1rem;
-}
-
-.project-card {
-  flex: 0 1 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; /* necessario per gestire .img-front/back */
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.project-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.project-link {
-  text-decoration: none;
-  color: #02744f;
-  padding: 1rem;
-  text-align: center;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.project-link:hover {
-  color: #025f41;
+  /* padding-right: 3rem; */
 }
 
 /* Arrow styles */
@@ -85,63 +40,89 @@ main {
   z-index: 2;
 }
 
-/* rotazione img */
-.img-container {
-  width: 100%;
-  height: 200px;
-  perspective: 1000px;
-  margin-bottom: 0.5rem;
-  position: relative;
-}
 
-.img-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.img-front,
-.img-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.img-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.img-back {
-  background-color: transparent;
-  color: #333;
+.projects-container {  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotateY(180deg);
-  padding: 1rem;
-  font-size: 1rem;
-
+  flex-direction: column;
+  gap: 2rem; 
+  padding: 0 5rem;
 }
 
-.project-card:hover .img-inner,
-.project-card.touch .img-inner {
-  transform: rotateY(180deg);
+.project {
+  border: 1px solid #025f41;
+  border-radius: 8px;
+  display: flex;
+  gap: 1.5rem; 
+  align-items: flex-start; 
+  
 }
+
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-height: 300px; 
+  /* border: 1px dashed yellow; */
+  
+}
+
+img {
+  height: 300px;
+  max-height: 400px;
+  max-width: 250px;
+  width: auto; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%; 
+}
+
+li{
+  text-align: left;
+  list-style: circle
+}
+
+
+h2{font-size: 2rem;
+margin-bottom: 2rem;}
+
+.project-description h3{ font-size: 1.2rem;
+text-align: left;
+margin-bottom: 1rem;}
+
+
+h3 span{
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  margin: 0 0.25em;
+  border-radius: 1em; 
+  background-color: #e0f7fa; 
+  border: 1px solid #025f41; 
+  color: #025f41; 
+  font-size: 0.85em;
+  font-weight: 500;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+  transition: all 0.2s ease;
+}
+
+.project-description p {
+  line-height: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
 
 .project-description{
   text-align: center;
   padding: 1rem;
 }
 
-/* animazione freccia */
 @keyframes drop-down {
   0% {
     transform: translateY(-40px) scaleX(1);
@@ -156,12 +137,11 @@ main {
   }
 }
 
-/* Rotazione utile se vuoi attivarla via JS */
 .rotate {
   transform: rotateY(3.142rad);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .projects-container {
     padding: 0.5rem;
@@ -176,4 +156,4 @@ main {
     height: 150px;
   }
 
-}
+} */

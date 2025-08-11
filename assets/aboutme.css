@@ -1,6 +1,10 @@
+main{
+  padding: 3rem;
+}
+
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 0.2rem dashed #02744f;
@@ -13,7 +17,7 @@
 
 #main-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
 }
 
 .main-section-text {
@@ -23,13 +27,17 @@
   margin-right: 2rem;
 }
 
-.main-section-text > h1 {
+.main-section-text p {
+  line-height:  1.3rem;
+}
+h1 {
   margin-bottom: 1rem;
+
 }
 
 .download-btn {
   position: absolute;
-  bottom: 0;
+  bottom: -2.5rem;
   right: 0;
   margin: 1rem;
   padding: 10px 20px;
