@@ -13,16 +13,15 @@ const getRandomColor = () => {
   return color;
 };
 
-// CLICK: attiva movimento e colore
+
 plane.addEventListener("click", () => {
   isActive = true;
-  plane.classList.add("control"); // ferma animazione CSS
+  plane.classList.add("control"); 
   const toggled = plane.classList.toggle("color");
   plane.style.fill = toggled ? getRandomColor() : "none";
   plane.focus();
 });
 
-// DOPPIO CLICK: resetta tutto
 plane.addEventListener("dblclick", () => {
   plane.style.fill = "none";
   plane.classList.remove("color");
@@ -34,7 +33,6 @@ plane.addEventListener("dblclick", () => {
   plane.style.transform = "none";
 });
 
-// Movimento con frecce
 document.addEventListener("keydown", (e) => {
   if (!isActive) return;
 

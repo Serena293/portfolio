@@ -4,8 +4,7 @@ body {
   height: 100vh;
   background-color: #181818;
   color: hsl(0, 0%, 83%);
-  font-family: "Source Code Pro", monospace;
- 
+  font-family: "Source Code Pro", monospace; 
   margin: 0;
   overflow-x: hidden;
   
