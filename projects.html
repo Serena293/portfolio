@@ -34,17 +34,92 @@
     <h1>My Projects</h1>
 
     <section class="projects-container">
-      
+
       <!-- Full-stack Projects -->
       <section class="project-div">
         <h2>Full-stack <span><i class="fas fa-angle-right angle-down"></i></span></h2>
         <div class="content-div">
+
           <article class="project">
+            <div class="project-description">
+              <h2>HR System</h2>
+              <h3>
+                Technologies:
+                <span>HTML5</span> <span>TypeScript</span>
+                <span>Tailwind CSS</span> <span>React</span> <span>Node.js</span>
+                <span>Express.js</span> <span>Prisma</span> <span>PostgreSQL</span>
+              </h3>
+              <p>
+                A full-stack Human Resources management system designed for admin and employee roles.
+                It features secure JWT-based authentication, role-based access control, and a responsive dashboard built
+                with React and Tailwind.
+              </p>
+              <ul>
+                <li>Admin and Employee login</li>
+                <li>Employee management (CRUD operations)</li>
+                <li>Protected routes with JWT authentication</li>
+                <li>Clean and responsive UI</li>
+              </ul>
+            </div>
+            <figure>
+              <img src="./assets/img/hr-system.png" alt="Screenshot of the HR System">
+              <figcaption>
+                <p>Live Demo:
+                  <a href="https://hr-system-frontend-bhcj.onrender.com/login" target="_blank"
+                    rel="noopener noreferrer">
+                    Visit App
+                  </a>
+                </p>
+                <p> Check the code <a href="https://github.com/Serena293/hr-system" target="_blank"
+                    rel="noopener noreferrer">here</a></p>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- job organizer -->
+          <article class="project">
+            <div class="project-description">
+              <h2>Plan App</h2>
+              <h3>Technologies: <span>HTML5</span><span>JavaScript</span> <span>Tailwind CSS</span>
+                <span>Vue</span> <span>PWA</span> <span>Java</span> <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+              </h3>
+              <p>A full-stack application to organize the job search:</p>
+              <ul>
+                <li>JWT authentication</li>
+                <li>Dynamic calendar</li>
+                <li> Welcome email</li>
+                <li>Save Jobs and Documents in a PostgreSQL database</li>
+                <li>Progressive Web App (PWA) support</li>
+              </ul>
+            </div>
+            <figure>
+              <img src="./assets/img/job.png" alt="Screenshot of the Job organizer">
+              <figcaption>
+                <p> Live Demo:
+                  <a href="https://job-organizer-frontend.onrender.com/" target="_blank" rel="noopener noreferrer">Visit
+                    App</a>
+                </p>
+                <ul>Check the code
+                  <li class="fig-li"> Frontend <a href="https://github.com/Serena293/job-organizer-frontend"
+                      target="_blank" rel="noopener noreferrer">here</a></li>
+                  <li class="fig-li"> Backend <a href="https://github.com/Serena293/job-organizer-backend"
+                      target="_blank" rel="noopener noreferrer"> here</a></li>
+                </ul>
+
+
+              </figcaption>
+            </figure>
+          </article>
+
+
+          <!-- Plan app -->
+          <!-- <article class="project">
             <div class="project-description">
               <h2>Plan App</h2>
               <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span> <span>Bootstrap</span>
                 <span>React</span> <span>PWA</span> <span>Java</span> <span>Spring Boot</span> <span>SASS</span>
-                <span>PostgreSQL</span></h3>
+                <span>PostgreSQL</span>
+              </h3>
               <p>A full-stack planning application with the following features:</p>
               <ul>
                 <li>JWT authentication</li>
@@ -58,10 +133,14 @@
             <figure>
               <img src="./assets/img/PlanApp.png" alt="Screenshot of the Plan Application">
               <figcaption>
-                <a href="https://fullstack-project-fe.onrender.com" target="_blank" rel="noopener noreferrer">Plan App</a>
+                <p> Live Demo:
+                <a href="https://fullstack-project-fe.onrender.com" target="_blank" rel="noopener noreferrer">Plan
+                  App</a>
+                </p>
+                <p>Check the code <a href="https://github.com/Serena293/fullstack-project" target="_blank" rel="noopener noreferrer">here</a></p>
               </figcaption>
             </figure>
-          </article>
+          </article> -->
         </div>
       </section>
 
@@ -69,21 +148,27 @@
       <section class="project-div">
         <h2>Frontend <span><i class="fas fa-angle-right angle-down"></i></span></h2>
         <div class="content-div">
-          
+
           <!-- Snake Game -->
           <article class="project">
-            <figure>
-              <img src="./assets/img/snake.png" alt="Screenshot of the Snake Game">
-              <figcaption>
-                <a href="https://snake-ten-rouge.vercel.app/" target="_blank" rel="noopener noreferrer">Snake</a>
-              </figcaption>
-            </figure>
+
             <div class="project-description">
               <h2>Snake Game</h2>
               <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Classic Snake game. Use the arrow keys to move the snake and eat the food. Avoid hitting yourself or the walls.</p>
+              <p>Classic Snake game. Use the arrow keys to move the snake and eat the food. Avoid hitting yourself or
+                the walls.</p>
               <p>Best score is saved in <code>localStorage</code>.</p>
             </div>
+            <figure>
+              <img src="./assets/img/snake.png" alt="Screenshot of the Snake Game">
+              <figcaption>
+                <p> Live demo:
+                  <a href="https://snake-ten-rouge.vercel.app/" target="_blank" rel="noopener noreferrer">Snake</a>
+                <p>Check the cose <a href="https://github.com/Serena293/snake" target="_blank"
+                    rel="noopener noreferrer"></a></p>
+                </p>
+              </figcaption>
+            </figure>
           </article>
 
           <!-- Bingo Game -->
@@ -91,29 +176,30 @@
             <div class="project-description">
               <h2>Bingo Game</h2>
               <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Bingo game that allows choosing the number of players and the number of cards for each player. Includes sound effects.</p>
+              <p>Bingo game that allows choosing the number of players and the number of cards for each player. Includes
+                sound effects.</p>
               <p>Game settings are saved in <code>localStorage</code>.</p>
             </div>
             <figure>
               <img src="./assets/img/tombola.png" alt="Screenshot of the Bingo Game">
               <figcaption>
-                <a href="https://tombola-iota.vercel.app/index.html" target="_blank" rel="noopener noreferrer">Bingo</a>
+                <p>Live demo: <a href="https://tombola-iota.vercel.app/index.html" target="_blank"
+                    rel="noopener noreferrer">Bingo</a> </p>
+                <p>Check the cose <a href="https://github.com/Serena293/Tombola" target="_blank"
+                    rel="noopener noreferrer"></a></p>
+
               </figcaption>
             </figure>
           </article>
 
           <!-- Weather App -->
           <article class="project">
-            <figure>
-              <img src="./assets/img/weather-app.png" alt="Screenshot of the Weather App">
-              <figcaption>
-                <a href="https://weather-app-two-omega-52.vercel.app/" target="_blank" rel="noopener noreferrer">Weather Application</a>
-              </figcaption>
-            </figure>
+
             <div class="project-description">
               <h2>Weather App</h2>
               <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>TypeScript</span> <span>Bootstrap</span>
-                <span>React</span> <span>PWA</span></h3>
+                <span>React</span> <span>PWA</span>
+              </h3>
               <p>A responsive weather application that integrates with two APIs:</p>
               <ul>
                 <li>OpenWeather for real-time weather data</li>
@@ -126,21 +212,40 @@
                 <li>Progressive Web App (PWA) support</li>
               </ul>
             </div>
+            <figure>
+              <img src="./assets/img/weather-app.png" alt="Screenshot of the Weather App">
+              <figcaption>
+                <p> Live Demo
+                  <a href="https://weather-app-two-omega-52.vercel.app/" target="_blank"
+                    rel="noopener noreferrer">Weather
+                    Application</a>
+                <p>Check the cose <a href="https://github.com/Serena293/weather-app" target="_blank"
+                    rel="noopener noreferrer"></a></p>
+                </p>
+              </figcaption>
+            </figure>
           </article>
 
           <!-- Rock Paper Scissors -->
           <article class="project">
-            <figure>
-              <img src="./assets/img/rock-paper-scissors.png" alt="Screenshot of the Rock Paper Scissors Game">
-              <figcaption>
-                <a href="https://rock-paper-scissors-game-green.vercel.app/" target="_blank" rel="noopener noreferrer">Rock Paper Scissors</a>
-              </figcaption>
-            </figure>
+
             <div class="project-description">
               <h2>Rock Paper Scissors</h2>
               <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Classic Rock Paper Scissors game with a score saved in <code>localStorage</code>. Includes a reset button.</p>
+              <p>Classic Rock Paper Scissors game with a score saved in <code>localStorage</code>. Includes a reset
+                button.</p>
             </div>
+            <figure>
+              <img src="./assets/img/rock-paper-scissors.png" alt="Screenshot of the Rock Paper Scissors Game">
+              <figcaption>
+                <p>Live Demo:
+                  <a href="https://rock-paper-scissors-game-green.vercel.app/" target="_blank"
+                    rel="noopener noreferrer">Rock Paper Scissors</a>
+                </p>
+                <p>Check the cose <a href="https://github.com/Serena293/RockPaperScissors-Game" target="_blank"
+                    rel="noopener noreferrer"></a></p>
+              </figcaption>
+            </figure>
           </article>
 
           <!-- Calculator -->
@@ -148,13 +253,20 @@
             <div class="project-description">
               <h2>Calculator</h2>
               <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Basic calculator built as a <strong>team project</strong>. Supports addition, subtraction, multiplication, and division.</p>
+              <p>Basic calculator built as a <strong>team project</strong>. Supports addition, subtraction,
+                multiplication, and division.</p>
               <p>Designed with a clean interface for ease of use and responsive layout for mobile devices.</p>
             </div>
             <figure>
               <img src="./assets/img/calculator.png" alt="Screenshot of the Calculator">
               <figcaption>
-                <a href="https://serena293.github.io/calculator/" target="_blank" rel="noopener noreferrer">Calculator</a>
+                <p> Live Demo:
+                  <a href="https://serena293.github.io/calculator/" target="_blank"
+                    rel="noopener noreferrer">Calculator</a>
+
+                </p>
+                <p>Check the code <a href="https://github.com/Serena293/calculator" target="_blank"
+                    rel="noopener noreferrer">here</a></p>
               </figcaption>
             </figure>
           </article>
@@ -166,7 +278,8 @@
 
     <div class="arrow-wrapper">
       <div class="arrow arrow-small arrow-down">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="m15 15-6 6m0 0-6-6m6 6V9a6 6 0 0 1 12 0v3" />
         </svg>
       </div>

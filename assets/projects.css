@@ -239,3 +239,7 @@ main {
 .project-div > h2:hover {
   background-color: #e9ecef;
 }
+
+.fig-li{
+  text-align: center;
+}
