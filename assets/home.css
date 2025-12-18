@@ -1,86 +1,96 @@
-.profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 0.2rem dashed #02744f;
+main {
+  overflow: hidden;
 }
-
-.div-profile-img {
-  padding-right: 2.5rem;
-  
-}
-
-#main-section {
+/*  Hero Section  */
+.hero {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 2rem;
+  position: relative; 
 }
 
-#text-main-section {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2rem;
-  margin-right: 2rem;
+/* Welcome text */
+.welcome-text {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(2,116,79,1);
+  margin: 0;
+  line-height: 1.1;
 }
 
-#text-main-section > h2 {
-    font-size: 30px;  
-    background: linear-gradient(270deg, rgb(233, 233, 234) 0%, rgba(2,116,79,1) 100%, rgba(0,212,255,1) 100%);  
-    background-clip: text;          
-    -webkit-background-clip: text;      
-    -webkit-text-fill-color: transparent;
-    color: transparent;                   
-  } 
+/* Hero roles */
+.hero h2.hero-roles {
+  position: relative;
+  margin-top: 1rem; 
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  min-height: 2rem; 
+  width: 100%;
+}
 
-#text-main-section > p {
-  margin-top: 1rem;
+.hero h2.hero-roles .hero-role {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  text-align: right;
 }
 
 
-/* plane */
-
-#plane-svg:focus {
-  outline: none;
+.hero .typing-cursor::after {
+  content: "|";
+  margin-left: 2px;
+  animation: typing-blink 0.1s infinite;
 }
 
-/* plane */
+@keyframes typing-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Plane */
 .plane {
   position: absolute;
   top: 10%;
-  left: -50;
+  left: -50px;
   width: 40px;
   height: 40px;
   color: rgba(2,116,79,1);
   animation: fly 15s linear infinite;
   cursor: pointer;
   border: none;
-  /* transition: transform 0.1s linear; */
 }
 
-/* .plane.control {
-  animation: none;
-} */
-
-
+#plane-svg:focus { outline: none; }
 
 @keyframes fly {
-  0% {
-    transform: translate(0vw, 0px) rotate(0deg);
-  }
-  20% {
-    transform: translate(20vw, -30px) rotate(8deg);
-  }
-  40% {
-    transform: translate(40vw, 10px) rotate(-6deg);
-  }
-  60% {
-    transform: translate(60vw, -20px) rotate(6deg);
-  }
-  80% {
-    transform: translate(80vw, 15px) rotate(-4deg);
-  }
-  100% {
-    transform: translate(100vw, 0px) rotate(-15deg);
-  }
+  0% { transform: translate(0vw, 0px) rotate(0deg); }
+  20% { transform: translate(20vw, -30px) rotate(8deg); }
+  40% { transform: translate(40vw, 10px) rotate(-6deg); }
+  60% { transform: translate(60vw, -20px) rotate(6deg); }
+  80% { transform: translate(80vw, 15px) rotate(-4deg); }
+  100% { transform: translate(100vw, 0px) rotate(-15deg); }
 }
 
+/* Responsive */
+@media (max-width: 1024px) {
+  .welcome-text { font-size: 3rem; }
+  .hero h2.hero-roles { font-size: 1.3rem; }
+}
+
+@media (max-width: 768px) {
+  .welcome-text { font-size: 2.5rem; }
+  .hero h2.hero-roles { font-size: 1.1rem; }
+  .hero { margin: 0 1rem; }
+}
+
+@media (max-width: 480px) {
+  .welcome-text { font-size: 2rem; }
+  .hero h2.hero-roles { font-size: 1rem; }
+}
