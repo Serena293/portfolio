@@ -4,16 +4,16 @@ body {
   height: 100vh;
   background-color: #181818;
   color: hsl(0, 0%, 83%);
-  font-family: "Source Code Pro", monospace; 
+  font-family: "Source Code Pro", monospace;
   margin: 0;
   overflow-x: hidden;
-  
 }
-
 main {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  justify-content: center;
+  /* flex-grow: 1; */
+  
 }
 
 a {
@@ -49,22 +49,27 @@ footer > a {
 
 h1 {
   font-size: 40px;
-  background: linear-gradient(270deg, rgb(233, 233, 234) 0%, rgba(2,116,79,1) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(
+    270deg,
+    rgb(233, 233, 234) 0%,
+    rgba(2, 116, 79, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-#toggle-btn{
+#toggle-btn {
   display: none;
 }
 
 @media (max-width: 768px) {
-  #toggle-btn{
+  #toggle-btn {
     display: block;
     background-color: transparent;
-    font-size:  1.5rem;
+    font-size: 1.5rem;
     color: #025f41;
     border: none;
   }
@@ -88,11 +93,11 @@ h1 {
   }
 
   #links-nav.show {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
   #main-section {
     flex-direction: column-reverse;
@@ -105,6 +110,6 @@ h1 {
   }
 }
 
-strong{font-weight: 900;}
-
- 
+strong {
+  font-weight: 900;
+}

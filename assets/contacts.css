@@ -1,4 +1,4 @@
-/* ===== BASE ===== */
+
 main {
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@ main {
   margin: 0 auto;
 }
 
-/* ===== CONTATTI ===== */
+
 .contacts-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ main {
   text-align: center;
 }
 
-/* ===== FORM ===== */
+/*  FORM  */
 #contact {
   width: 100%;
   max-width: 600px;
@@ -62,7 +62,6 @@ input, textarea {
   border-radius: 8px;
   font-family: 'Source Code Pro', monospace;
   font-size: 1rem;
-  width: 100%;
   transition: border-color 0.3s;
 }
 
@@ -87,13 +86,14 @@ button[type="submit"] {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+  ;
+
 }
 
 button[type="submit"]:hover {
   background-color: #015738;
 }
 
-/* Messaggio di successo */
 .success-message {
   text-align: center;
   padding: 2rem;
@@ -103,7 +103,7 @@ button[type="submit"]:hover {
   margin-top: 1rem;
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE  */
 @media (min-width: 768px) {
   main {
     flex-direction: row;
