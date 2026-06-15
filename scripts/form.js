@@ -1,49 +1,51 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('myForm');
-    
-    if (!form) {
-      console.error('Form not found!');
-      return;
-    }
-  
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn.innerHTML;
-      
-      // Mostra stato di caricamento
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-  
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 
-            'Accept': 'application/json'
-          }
-        });
-  
-        if (response.ok) {
-          // Successo - mostra messaggio
-          const successDiv = document.createElement('div');
-          successDiv.className = 'success-message';
-          successDiv.innerHTML = `
-            <h3><i class="fas fa-check-circle"></i> Message Sent!</h3>
-            <p>I'll respond as soon as possible.</p>
-          `;
-          form.parentNode.insertBefore(successDiv, form.nextSibling);
-          form.style.display = 'none';
-        } else {
-          throw new Error('Form submission failed');
-        }
-      } catch (error) {
-        alert('Error: Please try again or contact me directly.');
-        console.error('Form error:', error);
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-      }
-    });
+const menuButton = document.getElementById("toggle-btn");
+const navigationLinks = document.getElementById("links-nav");
+const form = document.getElementById("myForm");
+const formStatus = document.getElementById("form-status");
+
+if (menuButton && navigationLinks) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = navigationLinks.classList.contains("show");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
   });
+}
+
+if (form && formStatus) {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalContent = submitButton.innerHTML;
+
+    formStatus.className = "form-status";
+    formStatus.textContent = "";
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin" aria-hidden="true"></i>';
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      formStatus.className = "form-status is-visible is-success";
+      formStatus.textContent = "Thank you. Your message has been sent and I'll reply as soon as possible.";
+    } catch (error) {
+      formStatus.className = "form-status is-visible is-error";
+      formStatus.textContent = "Your message could not be sent. Please try again or contact me directly by email.";
+      console.error("Form error:", error);
+    } finally {
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalContent;
+    }
+  });
+}

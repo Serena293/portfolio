@@ -2,294 +2,332 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/img/programming.png" type="image/svg+xml">
+  <meta name="description"
+    content="Selected frontend and full-stack projects built by Serena Ferraro while developing her software development skills.">
+  <link rel="icon" href="./assets/img/programming.png" type="image/png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/reset.css">
   <link rel="stylesheet" href="./assets/general.css">
   <link rel="stylesheet" href="./assets/projects.css">
-  <title>Projects</title>
+  <title>Projects | Serena Ferraro</title>
 </head>
 
 <body>
   <header id="header">
-    <nav>
+    <nav aria-label="Main navigation">
       <div id="home-link">
-        <a href="index.html">Home</a>
-        <button id="toggle-btn">&#9776;</button>
+        <a class="brand" href="index.html">SF.</a>
+        <button id="toggle-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="links-nav">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
       </div>
       <div id="links-nav">
-        <a href="projects.html">Projects</a>
-        <a href="aboutme.html">About Me</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="aboutme.html">About me</a>
         <a href="contacts.html">Contacts</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <h1>My Projects</h1>
+  <main class="projects-main">
+    <header class="projects-intro">
+      <p class="eyebrow">Selected work</p>
+      <h1>Projects</h1>
+      <p>
+        Here are some of the projects I've built while developing my skills in web development. My main focus is
+        creating practical applications with clear user journeys, responsive interfaces and real-world use cases.
+      </p>
+    </header>
 
-    <section class="projects-container">
-
-      <!-- Full-stack Projects -->
-      <section class="project-div">
-        <h2>Full-stack <span><i class="fas fa-angle-right angle-down"></i></span></h2>
-        <div class="content-div">
-
-          <article class="project">
-            <div class="project-description">
-              <h2>HR System</h2>
-              <h3>
-                Technologies:
-                <span>HTML5</span> <span>TypeScript</span>
-                <span>Tailwind CSS</span> <span>React</span> <span>Node.js</span>
-                <span>Express.js</span> <span>Prisma</span> <span>PostgreSQL</span>
-              </h3>
-              <p>
-                A full-stack Human Resources management system designed for admin and employee roles.
-                It features secure JWT-based authentication, role-based access control, and a responsive dashboard built
-                with React and Tailwind.
-              </p>
-              <ul>
-                <li>Admin and Employee login</li>
-                <li>Employee management (CRUD operations)</li>
-                <li>Protected routes with JWT authentication</li>
-                <li>Clean and responsive UI</li>
-              </ul>
-            </div>
-            <figure>
-              <img src="./assets/img/hr-system.png" alt="Screenshot of the HR System">
-              <figcaption>
-                <p>Live Demo:
-                  <a href="https://hr-system-frontend-bhcj.onrender.com/login" target="_blank"
-                    rel="noopener noreferrer">
-                    Visit App
-                  </a>
-                </p>
-                <p> Check the code <a href="https://github.com/Serena293/hr-system" target="_blank"
-                    rel="noopener noreferrer">here</a></p>
-              </figcaption>
-            </figure>
-          </article>
-          <!-- job organizer -->
-          <article class="project">
-            <div class="project-description">
-              <h2>Plan App</h2>
-              <h3>Technologies: <span>HTML5</span><span>JavaScript</span> <span>Tailwind CSS</span>
-                <span>Vue</span> <span>PWA</span> <span>Java</span> <span>Spring Boot</span>
-                <span>PostgreSQL</span>
-              </h3>
-              <p>A full-stack application to organize the job search:</p>
-              <ul>
-                <li>JWT authentication</li>
-                <li>Dynamic calendar</li>
-                <li> Welcome email</li>
-                <li>Save Jobs and Documents in a PostgreSQL database</li>
-                <li>Progressive Web App (PWA) support</li>
-              </ul>
-            </div>
-            <figure>
-              <img src="./assets/img/job.png" alt="Screenshot of the Job organizer">
-              <figcaption>
-                <p> Live Demo:
-                  <a href="https://job-organizer-frontend.onrender.com/" target="_blank" rel="noopener noreferrer">Visit
-                    App</a>
-                </p>
-                <ul>Check the code
-                  <li class="fig-li"> Frontend <a href="https://github.com/Serena293/job-organizer-frontend"
-                      target="_blank" rel="noopener noreferrer">here</a></li>
-                  <li class="fig-li"> Backend <a href="https://github.com/Serena293/job-organizer-backend"
-                      target="_blank" rel="noopener noreferrer"> here</a></li>
-                </ul>
-
-
-              </figcaption>
-            </figure>
-          </article>
-
-
-          <!-- Plan app -->
-          <!-- <article class="project">
-            <div class="project-description">
-              <h2>Plan App</h2>
-              <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span> <span>Bootstrap</span>
-                <span>React</span> <span>PWA</span> <span>Java</span> <span>Spring Boot</span> <span>SASS</span>
-                <span>PostgreSQL</span>
-              </h3>
-              <p>A full-stack planning application with the following features:</p>
-              <ul>
-                <li>JWT authentication</li>
-                <li>Dynamic calendar</li>
-                <li>Password reset via email</li>
-                <li>Save tasks in a PostgreSQL database</li>
-                <li>Location search functionality using RapidAPI</li>
-                <li>Progressive Web App (PWA) support</li>
-              </ul>
-            </div>
-            <figure>
-              <img src="./assets/img/PlanApp.png" alt="Screenshot of the Plan Application">
-              <figcaption>
-                <p> Live Demo:
-                <a href="https://fullstack-project-fe.onrender.com" target="_blank" rel="noopener noreferrer">Plan
-                  App</a>
-                </p>
-                <p>Check the code <a href="https://github.com/Serena293/fullstack-project" target="_blank" rel="noopener noreferrer">here</a></p>
-              </figcaption>
-            </figure>
-          </article> -->
+    <section class="project-section" aria-labelledby="selected-projects-title">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <div>
+          <h2 id="selected-projects-title">Selected projects</h2>
+          <p>Recent frontend work with a focus on usability, interaction and thoughtful design.</p>
         </div>
-      </section>
+      </div>
 
-      <!-- Frontend Projects -->
-      <section class="project-div">
-        <h2>Frontend <span><i class="fas fa-angle-right angle-down"></i></span></h2>
-        <div class="content-div">
+      <div class="featured-projects">
+        <article class="project-card project-card-featured">
+          <div class="project-media">
+            <img src="./assets/img/destination-explorer.png" alt="Destination Explorer application screenshot">
+            <p class="image-placeholder">
+              No image avaiable<br>
+              <code>assets/img/destination-explorer.png</code>
+            </p>
+          </div>
 
-          <!-- Snake Game -->
-          <article class="project">
-
-            <div class="project-description">
-              <h2>Snake Game</h2>
-              <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Classic Snake game. Use the arrow keys to move the snake and eat the food. Avoid hitting yourself or
-                the walls.</p>
-              <p>Best score is saved in <code>localStorage</code>.</p>
+          <div class="project-content">
+            <p class="project-type">Featured frontend project</p>
+            <h3>Destination Explorer</h3>
+            <p>
+              A travel discovery application inspired by my interest in travel and international experiences. Users
+              can explore destinations, search for cities, create personalised shortlists and plan future trips.
+            </p>
+            <ul class="feature-list">
+              <li>Destination filtering and reusable React components</li>
+              <li>External API integration and persistent shortlists</li>
+              <li>Interactive 3D globe and responsive interface</li>
+              <li>Accessible contact forms integrated with Formspree</li>
+            </ul>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>React Router</li>
+              <li>Bootstrap</li>
+              <li>REST APIs</li>
+            </ul>
+            <div class="project-links">
+              <a class="primary-link" href="https://destination-explorer-brown.vercel.app/" target="_blank"
+                rel="noopener noreferrer">Live demo <span aria-hidden="true">-&gt;</span></a>
+              <a href="https://github.com/Serena293/destination-explorer" target="_blank"
+                rel="noopener noreferrer">Source code</a>
             </div>
-            <figure>
-              <img src="./assets/img/snake.png" alt="Screenshot of the Snake Game">
-              <figcaption>
-                <p> Live demo:
-                  <a href="https://snake-ten-rouge.vercel.app/" target="_blank" rel="noopener noreferrer">Snake</a>
-                <p>Check the code <a href="https://github.com/Serena293/snake" target="_blank"
-                    rel="noopener noreferrer"></a></p>
-                </p>
-              </figcaption>
-            </figure>
-          </article>
+          </div>
+        </article>
 
-          <!-- Bingo Game -->
-          <article class="project">
-            <div class="project-description">
-              <h2>Bingo Game</h2>
-              <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Bingo game that allows choosing the number of players and the number of cards for each player. Includes
-                sound effects.</p>
-              <p>Game settings are saved in <code>localStorage</code>.</p>
+        <article class="project-card project-card-featured project-card-reverse">
+          <div class="project-media">
+            <img src="./assets/img/softleaves.png" alt="SoftLeaves web application screenshot">
+            <p class="image-placeholder">
+              No image avaiable<br>
+              <code>assets/img/softleaves.png</code>
+            </p>
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">Featured frontend project</p>
+            <h3>SoftLeaves</h3>
+            <p>
+              A calm, accessible web application featuring a memory game, a puzzle and a sensory mode. The experience
+              uses gentle animations and simple interactions to create an inviting digital space.
+            </p>
+            <ul class="feature-list">
+              <li>Three distinct interactive experiences</li>
+              <li>Calm animations and accessible visual choices</li>
+              <li>Responsive interface built with reusable components</li>
+            </ul>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+            <div class="project-links">
+              <a class="primary-link" href="https://softleaves.vercel.app/" target="_blank"
+                rel="noopener noreferrer">Live demo <span aria-hidden="true">-&gt;</span></a>
+              <a href="https://github.com/Serena293/softleaves" target="_blank" rel="noopener noreferrer">Source
+                code</a>
             </div>
-            <figure>
-              <img src="./assets/img/tombola.png" alt="Screenshot of the Bingo Game">
-              <figcaption>
-                <p>Live demo: <a href="https://tombola-iota.vercel.app/index.html" target="_blank"
-                    rel="noopener noreferrer">Bingo</a> </p>
-                <p>Check the code <a href="https://github.com/Serena293/Tombola" target="_blank"
-                    rel="noopener noreferrer"></a></p>
-
-              </figcaption>
-            </figure>
-          </article>
-
-          <!-- Weather App -->
-          <article class="project">
-
-            <div class="project-description">
-              <h2>Weather App</h2>
-              <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>TypeScript</span> <span>Bootstrap</span>
-                <span>React</span> <span>PWA</span>
-              </h3>
-              <p>A responsive weather application that integrates with two APIs:</p>
-              <ul>
-                <li>OpenWeather for real-time weather data</li>
-                <li>RapidAPI for location search functionality</li>
-              </ul>
-              <p>Key features:</p>
-              <ul>
-                <li>Automatic geolocation detection</li>
-                <li>Favorite cities saved in <code>localStorage</code></li>
-                <li>Progressive Web App (PWA) support</li>
-              </ul>
-            </div>
-            <figure>
-              <img src="./assets/img/weather-app.png" alt="Screenshot of the Weather App">
-              <figcaption>
-                <p> Live Demo
-                  <a href="https://weather-app-two-omega-52.vercel.app/" target="_blank"
-                    rel="noopener noreferrer">Weather
-                    Application</a>
-                <p>Check the code <a href="https://github.com/Serena293/weather-app" target="_blank"
-                    rel="noopener noreferrer"></a></p>
-                </p>
-              </figcaption>
-            </figure>
-          </article>
-
-          <!-- Rock Paper Scissors -->
-          <article class="project">
-
-            <div class="project-description">
-              <h2>Rock Paper Scissors</h2>
-              <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Classic Rock Paper Scissors game with a score saved in <code>localStorage</code>. Includes a reset
-                button.</p>
-            </div>
-            <figure>
-              <img src="./assets/img/rock-paper-scissors.png" alt="Screenshot of the Rock Paper Scissors Game">
-              <figcaption>
-                <p>Live Demo:
-                  <a href="https://rock-paper-scissors-game-green.vercel.app/" target="_blank"
-                    rel="noopener noreferrer">Rock Paper Scissors</a>
-                </p>
-                <p>Check the code <a href="https://github.com/Serena293/RockPaperScissors-Game" target="_blank"
-                    rel="noopener noreferrer"></a></p>
-              </figcaption>
-            </figure>
-          </article>
-
-          <!-- Calculator -->
-          <article class="project">
-            <div class="project-description">
-              <h2>Calculator</h2>
-              <h3>Technologies: <span>HTML5</span> <span>CSS</span> <span>JavaScript</span></h3>
-              <p>Basic calculator built as a <strong>team project</strong>. Supports addition, subtraction,
-                multiplication, and division.</p>
-              <p>Designed with a clean interface for ease of use and responsive layout for mobile devices.</p>
-            </div>
-            <figure>
-              <img src="./assets/img/calculator.png" alt="Screenshot of the Calculator">
-              <figcaption>
-                <p> Live Demo:
-                  <a href="https://serena293.github.io/calculator/" target="_blank"
-                    rel="noopener noreferrer">Calculator</a>
-
-                </p>
-                <p>Check the code <a href="https://github.com/Serena293/calculator" target="_blank"
-                    rel="noopener noreferrer">here</a></p>
-              </figcaption>
-            </figure>
-          </article>
-
-        </div>
-      </section>
-
+          </div>
+        </article>
+      </div>
     </section>
 
-    <div class="arrow-wrapper">
-      <div class="arrow arrow-small arrow-down">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m15 15-6 6m0 0-6-6m6 6V9a6 6 0 0 1 12 0v3" />
-        </svg>
+    <section class="project-section" aria-labelledby="fullstack-projects-title">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <div>
+          <h2 id="fullstack-projects-title">Full-stack applications</h2>
+          <p>Projects connecting frontend interfaces with authentication, APIs and persistent data.</p>
+        </div>
       </div>
-      <p class="arrow-text">Check the code on GitHub</p>
-    </div>
+
+      <div class="fullstack-grid">
+        <article class="project-card job-project">
+          <div class="project-media">
+            <img src="./assets/img/job.png" alt="Job Organizer application screenshot">
+            <p class="image-placeholder">Screenshot unavailable</p>
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">Primary full-stack project</p>
+            <h3>Job Organizer</h3>
+            <p>
+              A full-stack application designed to make the job search easier to manage. It brings applications,
+              documents and important dates together in one practical workspace.
+            </p>
+            <ul class="feature-list">
+              <li>JWT authentication and protected user data</li>
+              <li>Dynamic calendar and saved job applications</li>
+              <li>Document storage, welcome email and PWA support</li>
+              <li>PostgreSQL database with a Spring Boot backend</li>
+            </ul>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Vue</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>PostgreSQL</li>
+              <li>PWA</li>
+            </ul>
+            <div class="project-links">
+              <a class="primary-link" href="https://job-organizer-frontend.onrender.com/" target="_blank"
+                rel="noopener noreferrer">Live demo <span aria-hidden="true">-&gt;</span></a>
+              <a href="https://github.com/Serena293/job-organizer-frontend" target="_blank"
+                rel="noopener noreferrer">Frontend</a>
+              <a href="https://github.com/Serena293/job-organizer-backend" target="_blank"
+                rel="noopener noreferrer">Backend</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card hr-project">
+          <div class="project-media">
+            <img src="./assets/img/hr-system.png" alt="HR System application screenshot">
+            <p class="image-placeholder">Screenshot unavailable</p>
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">Full-stack project</p>
+            <h3>HR System</h3>
+            <p>
+              A human resources management system for admin and employee roles, with secure authentication and a
+              responsive dashboard.
+            </p>
+            <ul class="feature-list compact-features">
+              <li>Role-based access control</li>
+              <li>Employee CRUD operations</li>
+              <li>Protected routes with JWT authentication</li>
+            </ul>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Node.js</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a class="primary-link" href="https://hr-system-frontend-bhcj.onrender.com/login" target="_blank"
+                rel="noopener noreferrer">Live demo <span aria-hidden="true">-&gt;</span></a>
+              <a href="https://github.com/Serena293/hr-system" target="_blank" rel="noopener noreferrer">Source
+                code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section" aria-labelledby="more-projects-title">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <div>
+          <h2 id="more-projects-title">More projects</h2>
+          <p>Smaller applications that helped me practise core frontend concepts.</p>
+        </div>
+      </div>
+
+      <div class="small-projects-grid">
+        <article class="small-project-card">
+          <img src="./assets/img/weather-app.png" alt="Weather App screenshot">
+          <div class="small-project-content">
+            <h3>Weather App</h3>
+            <p>Responsive PWA with live weather, location search, geolocation and saved favourite cities.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>REST APIs</li>
+            </ul>
+            <div class="text-links">
+              <a href="https://weather-app-two-omega-52.vercel.app/" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/Serena293/weather-app" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-project-card">
+          <img src="./assets/img/snake.png" alt="Snake Game screenshot">
+          <div class="small-project-content">
+            <h3>Snake Game</h3>
+            <p>A browser-based version of the classic game with keyboard controls and a persistent best score.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="text-links">
+              <a href="https://snake-ten-rouge.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/Serena293/snake" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-project-card">
+          <img src="./assets/img/tombola.png" alt="Bingo Game screenshot">
+          <div class="small-project-content">
+            <h3>Bingo Game</h3>
+            <p>A configurable multiplayer bingo game with multiple cards, sound effects and saved settings.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="text-links">
+              <a href="https://tombola-iota.vercel.app/index.html" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/Serena293/Tombola" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-project-card">
+          <img src="./assets/img/rock-paper-scissors.png" alt="Rock Paper Scissors Game screenshot">
+          <div class="small-project-content">
+            <h3>Rock Paper Scissors</h3>
+            <p>A simple interactive game with persistent scoring and a reset function.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="text-links">
+              <a href="https://rock-paper-scissors-game-green.vercel.app/" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/Serena293/RockPaperScissors-Game" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-project-card">
+          <img src="./assets/img/calculator.png" alt="Calculator screenshot">
+          <div class="small-project-content">
+            <h3>Calculator</h3>
+            <p>A responsive team project supporting the four core arithmetic operations.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="text-links">
+              <a href="https://serena293.github.io/calculator/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/Serena293/calculator" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <a href="https://github.com/Serena293"><i class="fab fa-github"></i></a>
-    <p>&copy; <span id="year"></span> - Serena Ferraro</p>
+    <a href="https://github.com/Serena293" target="_blank" rel="noopener noreferrer"
+      aria-label="Serena Ferraro on GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a>
+    <p>&copy; <span id="year"></span> Serena Ferraro</p>
   </footer>
 
   <script src="scripts/general.js"></script>

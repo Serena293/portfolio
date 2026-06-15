@@ -1,95 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./assets/img/profile.png" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/general.css" />
-    <link rel="stylesheet" href="./assets/aboutme.css" />
-    <title>About Serena</title>
-  </head>
-  <body>
-    <header id="header">
-      <nav>
-        <div id="home-link">
-          <a href="index.html">Home</a>
-          <button id="toggle-btn">&#9776;</button>
-        </div>
-        <div id="links-nav">
-          <a href="projects.html">Projects</a>
-          <a href="aboutme.html">About me</a>
-          <a href="contacts.html">Contacts</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="main-section">
-        
-        <div class="main-section-text"> <h1>SERENA FERRARO</h1>
-          <p>
-            Hi, I'm Serena. I'm just starting a new journey as a web developer.
-          </p>
-          <p>
-            I’ve spent the last few years traveling the world, working in
-            different industries, always looking for something that truly
-            excited me.
-          </p>
-          <p>
-            Last year, I discovered the world of coding—and I fell in love with
-            it. Since then, I've been studying and learning something new every
-            day.
-          </p>
-          <p>
-            Along the way, I’ve built a few small projects that you can check
-            out in the Projects section.
-          </p>
-          <p>
-            Now, I'm ready to take the next step—to grow my skills, my career,
-            and keep learning even more.
-          </p>
-          <p>
-            I'm a curious and creative person, and I love solving problems and
-            building things that work. I enjoy challenges, especially the ones
-            that push me to think in new ways.
-          </p>
-          <p>
-            When I’m not coding, you’ll probably find me hiking, reading a good
-            book, or playing chess. I believe that every little experience
-            shapes who we are—and I bring all of that into the way I learn and
-            work.
-          </p>
 
-          <a href="./docs/SerenaFerraro-CV.pdf" download class="download-btn">
-            <i class="fas fa-download"></i> Download CV
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about Serena Ferraro's transition from an international career in aviation and hospitality into software development.">
+  <link rel="icon" href="./assets/img/profile.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/general.css">
+  <link rel="stylesheet" href="./assets/aboutme.css">
+  <title>About Me | Serena Ferraro</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav aria-label="Main navigation">
+      <div id="home-link">
+        <a class="brand" href="index.html">SF.</a>
+        <button id="toggle-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="links-nav">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="links-nav">
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html" aria-current="page">About me</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="about-main">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="about-intro">
+        <p class="eyebrow">About me</p>
+        <h1 id="about-title">Building a new career <span>one project at a time.</span></h1>
+        <p class="intro-copy">
+          I'm a career changer moving into software development after several years working in aviation and
+          hospitality across different countries.
+        </p>
+        <div class="about-actions">
+          <a class="primary-action" href="./docs/SerenaFerraro-CV.pdf" target="_blank" rel="noopener noreferrer">
+            View CV <span aria-hidden="true">-&gt;</span>
           </a>
+          <a class="secondary-action" href="projects.html">View my projects</a>
         </div>
+      </div>
 
-        <div class="div-profile-img">
-          <img
-            src="assets/img/Profile-image.png"
-            alt="profile-image"
-            class="profile-img"
-          >
+      <figure class="profile-card">
+        <div class="profile-image">
+          <img src="./assets/img/Profile-image.png" alt="Serena Ferraro">
         </div>
-      </section>
-    </main>
-    <footer>
-      <a href="https://github.com/Serena293"><i class="fab fa-github"></i></a>
-      <p>&copy; <span id="year"></span> - Serena Ferraro</p>
-    </footer>
-     <script src="scripts/general.js"></script>
-    <script src="scripts/year.js"></script>
-  </body>
+        <figcaption>
+          <span>Serena Ferraro</span>
+          Aspiring Software Developer based in Scotland
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-title">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <div>
+          <p class="section-label">My path</p>
+          <h2 id="story-title">A different route into technology.</h2>
+        </div>
+      </div>
+
+      <div class="story-copy">
+        <p>
+          My background taught me how to communicate with people from different cultures, stay calm under pressure and
+          solve practical problems in fast-paced environments. Since 2024, I have been developing my technical skills
+          through structured training, personal projects and continuous self-study.
+        </p>
+        <p>
+          I'm particularly interested in travel technology, user-focused digital products and building applications
+          that are useful in real life.
+        </p>
+        <p>
+          I enjoy the process of taking an idea, breaking it down into smaller problems, researching possible solutions
+          and gradually turning it into something that works.
+        </p>
+      </div>
+    </section>
+
+    <section class="strengths-section" aria-labelledby="strengths-title">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <div>
+          <p class="section-label">What I bring</p>
+          <h2 id="strengths-title">Experience that still matters in tech.</h2>
+        </div>
+      </div>
+
+      <div class="strengths-grid">
+        <article class="strength-card">
+          <p class="card-number">01</p>
+          <h3>Cross-cultural communication</h3>
+          <p>Working internationally taught me to listen carefully, adapt and communicate clearly with different people.</p>
+        </article>
+
+        <article class="strength-card">
+          <p class="card-number">02</p>
+          <h3>Calm under pressure</h3>
+          <p>I am comfortable prioritising tasks and making practical decisions in busy, fast-changing environments.</p>
+        </article>
+
+        <article class="strength-card">
+          <p class="card-number">03</p>
+          <h3>Practical problem-solving</h3>
+          <p>I like breaking complex situations into manageable steps and working steadily towards a useful solution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="focus-section" aria-labelledby="focus-title">
+      <div class="focus-copy">
+        <p class="section-number">03</p>
+        <p class="section-label">Current focus</p>
+        <h2 id="focus-title">Learning by building.</h2>
+        <p>
+          At the moment, my main focus is improving my JavaScript and frontend development skills, especially through
+          React projects.
+        </p>
+      </div>
+
+      <ul class="focus-topics" aria-label="Current areas of focus">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Frontend development</li>
+        <li>User-focused products</li>
+        <li>Travel technology</li>
+      </ul>
+    </section>
+
+    <section class="about-cta" aria-labelledby="cta-title">
+      <div>
+        <p class="section-label">See the work</p>
+        <h2 id="cta-title">Explore what I've been building.</h2>
+      </div>
+      <a href="projects.html">View projects <span aria-hidden="true">-&gt;</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/Serena293" target="_blank" rel="noopener noreferrer"
+      aria-label="Serena Ferraro on GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a>
+    <p>&copy; <span id="year"></span> Serena Ferraro</p>
+  </footer>
+
+  <script src="scripts/general.js"></script>
+  <script src="scripts/year.js"></script>
+  <script src="scripts/about.js"></script>
+</body>
+
 </html>
